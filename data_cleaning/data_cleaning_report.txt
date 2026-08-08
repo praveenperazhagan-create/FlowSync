@@ -1,0 +1,356 @@
+================================================================================
+TRAFFIC DATA CLEANING REPORT
+================================================================================
+
+DATASET SIZE
+--------------------------------------------------------------------------------
+Original rows: 200,001
+Original columns: 35
+Final rows: 200,001
+Final columns: 38
+
+DUPLICATES
+--------------------------------------------------------------------------------
+Exact duplicate rows found: 0
+
+EMPTY DATA
+--------------------------------------------------------------------------------
+Completely empty rows removed: 0
+Completely empty columns removed: 0
+
+TEXT/CATEGORICAL COLUMNS
+--------------------------------------------------------------------------------
+- record_id
+- sensor_id
+- road_name
+- road_type
+- city_zone
+- weather_condition
+- is_peak_hour
+- is_weekend
+- is_public_holiday
+- signal_status
+- incident_reported
+- incident_type
+- road_closure
+- public_transport_nearby
+- school_zone
+- construction_zone
+- event_nearby
+- congestion_level
+
+DATETIME COLUMNS
+--------------------------------------------------------------------------------
+- timestamp
+
+CREATED TIME FEATURES
+--------------------------------------------------------------------------------
+- timestamp_hour
+- timestamp_day_of_week
+- timestamp_is_weekend
+
+MISSING VALUE CHANGES
+--------------------------------------------------------------------------------
+- latitude: Filled numeric missing values with median (1 values)
+- longitude: Filled numeric missing values with median (1 values)
+- num_lanes: Filled numeric missing values with median (1 values)
+- speed_limit_kmph: Filled numeric missing values with median (1 values)
+- heavy_vehicle_pct: Filled numeric missing values with median (8829 values)
+- pedestrian_count: Filled numeric missing values with median (5073 values)
+- temperature_c: Filled numeric missing values with median (6217 values)
+- humidity_pct: Filled numeric missing values with median (4443 values)
+- visibility_km: Filled numeric missing values with median (4939 values)
+- avg_wait_time_sec: Filled numeric missing values with median (5705 values)
+- parking_occupancy_pct: Filled numeric missing values with median (8287 values)
+- air_quality_index: Filled numeric missing values with median (4982 values)
+- avg_speed_kmph: Filled numeric missing values with median (1 values)
+- travel_time_index: Filled numeric missing values with median (1 values)
+
+COLUMN ANALYSIS
+--------------------------------------------------------------------------------
+
+A - record_id
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 200000
+
+B - timestamp
+  Type: datetime
+  Missing: 0 (0.0%)
+  Unique values: 8641
+
+C - sensor_id
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 500
+
+D - road_name
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 154
+
+E - road_type
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 4
+
+F - city_zone
+  Type: categorical/text
+  Missing: 0 (0.0%)
+  Unique values: 5
+
+G - latitude
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 500
+  Minimum: 12.901457
+  Maximum: 13.19993
+  Mean: 13.0454786599517
+  Median: 13.04394
+  Possible outliers: 0
+
+H - longitude
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 499
+  Minimum: 80.150148
+  Maximum: 80.299909
+  Mean: 80.2251226799916
+  Median: 80.22646
+  Possible outliers: 0
+
+I - num_lanes
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 6
+  Minimum: 1.0
+  Maximum: 6.0
+  Mean: 2.471672641636792
+  Median: 2.0
+  Possible outliers: 14005
+
+J - speed_limit_kmph
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 9
+  Minimum: 20.0
+  Maximum: 110.0
+  Mean: 52.53403732981335
+  Median: 50.0
+  Possible outliers: 16754
+
+K - vehicle_count
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 3430
+  Minimum: 0
+  Maximum: 4455
+  Mean: 398.03305983470085
+  Median: 208.0
+  Possible outliers: 14797
+
+L - heavy_vehicle_pct
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 287
+  Minimum: 0.0
+  Maximum: 29.3
+  Mean: 8.3560252198739
+  Median: 7.9
+  Possible outliers: 4145
+
+M - pedestrian_count
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 120
+  Minimum: 0.0
+  Maximum: 120.0
+  Mean: 28.804635976820116
+  Median: 23.0
+  Possible outliers: 354
+
+N - weather_condition
+  Type: categorical/text
+  Missing: 0 (0.0%)
+  Unique values: 5
+
+O - temperature_c
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 281
+  Minimum: 12.0
+  Maximum: 42.0
+  Mean: 27.438619306903465
+  Median: 27.6
+  Possible outliers: 1132
+
+P - humidity_pct
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 840
+  Minimum: 15.0
+  Maximum: 100.0
+  Mean: 58.67738011309943
+  Median: 53.3
+  Possible outliers: 0
+
+Q - visibility_km
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 1181
+  Minimum: 0.2
+  Maximum: 12.0
+  Mean: 7.817541162294187
+  Median: 8.93
+  Possible outliers: 0
+
+R - is_peak_hour
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+S - is_weekend
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+T - is_public_holiday
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+U - signal_status
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 5
+
+V - signal_cycle_time_sec
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 106
+  Minimum: 0
+  Maximum: 149
+  Mean: 85.119799401003
+  Median: 89.0
+  Possible outliers: 0
+
+W - avg_wait_time_sec
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 1037
+  Minimum: 0.0
+  Maximum: 121.5
+  Mean: 28.833916330418347
+  Median: 28.3
+  Possible outliers: 1615
+
+X - incident_reported
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+Y - incident_type
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 5
+
+Z - road_closure
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+AA - public_transport_nearby
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+AB - school_zone
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+AC - construction_zone
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+AD - event_nearby
+  Type: categorical/text
+  Missing: 1 (0.0%)
+  Unique values: 2
+
+AE - parking_occupancy_pct
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 997
+  Minimum: 0.0
+  Maximum: 100.0
+  Mean: 57.25114724426378
+  Median: 56.2
+  Possible outliers: 0
+
+AF - air_quality_index
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 226
+  Minimum: 15.0
+  Maximum: 243.0
+  Mean: 104.39530302348489
+  Median: 104.0
+  Possible outliers: 19
+
+AG - avg_speed_kmph
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 1081
+  Minimum: 2.0
+  Maximum: 110.0
+  Mean: 44.239039804800974
+  Median: 40.0
+  Possible outliers: 9967
+
+AH - travel_time_index
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 591
+  Minimum: 1.0
+  Maximum: 35.0
+  Mean: 1.29319053404733
+  Median: 1.11
+  Possible outliers: 19496
+
+AI - congestion_level
+  Type: categorical/text
+  Missing: 0 (0.0%)
+  Unique values: 4
+
+AJ - timestamp_hour
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 24
+  Minimum: 0
+  Maximum: 23
+  Mean: 11.487502562487187
+  Median: 11.0
+  Possible outliers: 0
+
+AK - timestamp_day_of_week
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 7
+  Minimum: 0
+  Maximum: 6
+  Mean: 3.016609916950415
+  Median: 3.0
+  Possible outliers: 0
+
+AL - timestamp_is_weekend
+  Type: numeric
+  Missing: 0 (0.0%)
+  Unique values: 2
+  Minimum: 0
+  Maximum: 1
+  Mean: 0.28932855335723323
+  Median: 0.0
+  Possible outliers: 0
+

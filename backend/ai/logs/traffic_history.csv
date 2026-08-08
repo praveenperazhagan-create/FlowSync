@@ -1,0 +1,11 @@
+timestamp,city_zone,vehicle_count,cars,bikes,bus,truck,weather,visibility,prediction,confidence,recommended_signal_time,queue_length,waiting_time
+2026-08-07 23:21:40,Downtown,0,0,0,0,0,Clear,10.0,Low,52.89,100,5,13.9
+2026-08-08 00:35:47,Downtown,37,16,9,8,4,Clear,10.0,Severe,48.03,100,5,28.1
+2026-08-08 00:40:56,Downtown,10,9,0,0,1,Clear,10.0,Low,91.79,100,5,14.9
+2026-08-08 00:40:57,Downtown,8,5,0,1,2,Clear,10.0,Low,91.71,100,5,14.6
+2026-08-08 00:40:58,Downtown,6,6,0,0,0,Clear,10.0,Low,91.71,100,5,14.3
+2026-08-08 00:40:59,Downtown,3,2,0,0,1,Clear,10.0,Low,61.22,100,5,14.0
+2026-08-08 00:41:00,Downtown,4,1,0,2,1,Clear,10.0,Low,61.22,100,5,14.1
+2026-08-08 00:41:01,Downtown,9,8,0,0,1,Clear,10.0,Low,90.71,100,5,14.7
+2026-08-08 01:18:53,Downtown,37,16,9,8,4,Clear,1.5,Severe,62.01,100,6,38.5
+2026-08-08 07:14:26,Downtown,37,16,9,8,4,Clear,10.0,Low,57.83,100,5,28.1

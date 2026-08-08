@@ -1,0 +1,128 @@
+{
+  "best_model": "RandomForest",
+  "best_accuracy": 0.9218019549511263,
+  "models_evaluated": {
+    "RandomForest": {
+      "accuracy": 0.9218,
+      "precision": 0.9207,
+      "recall": 0.9218,
+      "f1_score": 0.9211,
+      "confusion_matrix": [
+        [
+          26315,
+          1074,
+          0,
+          0
+        ],
+        [
+          1514,
+          6990,
+          198,
+          0
+        ],
+        [
+          0,
+          232,
+          2244,
+          54
+        ],
+        [
+          0,
+          0,
+          56,
+          1324
+        ]
+      ],
+      "feature_importance": {
+        "road_name": 0.013514,
+        "city_zone": 0.006296,
+        "latitude": 0.01421,
+        "longitude": 0.014066,
+        "vehicle_count": 0.054578,
+        "avg_speed_kmph": 0.090085,
+        "travel_time_index": 0.505579,
+        "weather_condition": 0.003728,
+        "temperature_c": 0.01488,
+        "humidity_pct": 0.015748,
+        "visibility_km": 0.015919,
+        "signal_status": 0.004704,
+        "signal_cycle_time_sec": 0.015771,
+        "avg_wait_time_sec": 0.128779,
+        "incident_reported": 0.006235,
+        "incident_type": 0.005373,
+        "road_closure": 0.002173,
+        "construction_zone": 0.002779,
+        "event_nearby": 0.001069,
+        "is_peak_hour": 0.03206,
+        "is_weekend": 0.002949,
+        "is_public_holiday": 0.002646,
+        "hour": 0.023861,
+        "day": 0.011234,
+        "month": 0.003617,
+        "dayofweek": 0.008149,
+        "year": 0.0
+      }
+    },
+    "GradientBoosting": {
+      "accuracy": 0.9199,
+      "precision": 0.9185,
+      "recall": 0.9199,
+      "f1_score": 0.9189,
+      "confusion_matrix": [
+        [
+          26350,
+          1039,
+          0,
+          0
+        ],
+        [
+          1593,
+          6897,
+          212,
+          0
+        ],
+        [
+          0,
+          233,
+          2225,
+          72
+        ],
+        [
+          0,
+          0,
+          56,
+          1324
+        ]
+      ],
+      "feature_importance": {
+        "road_name": 0.001795,
+        "city_zone": 0.000292,
+        "latitude": 0.002233,
+        "longitude": 0.002005,
+        "vehicle_count": 0.002918,
+        "avg_speed_kmph": 0.002421,
+        "travel_time_index": 0.972204,
+        "weather_condition": 0.000145,
+        "temperature_c": 0.002578,
+        "humidity_pct": 0.002416,
+        "visibility_km": 0.00253,
+        "signal_status": 0.000412,
+        "signal_cycle_time_sec": 0.001527,
+        "avg_wait_time_sec": 0.002671,
+        "incident_reported": 5.8e-05,
+        "incident_type": 0.000253,
+        "road_closure": 0.0,
+        "construction_zone": 0.00012,
+        "event_nearby": 0.000121,
+        "is_peak_hour": 0.000146,
+        "is_weekend": 6.8e-05,
+        "is_public_holiday": 0.000107,
+        "hour": 0.00103,
+        "day": 0.00121,
+        "month": 0.00018,
+        "dayofweek": 0.000559,
+        "year": 0.0
+      }
+    }
+  }
+}
